@@ -29,6 +29,7 @@ module.exports = {
     'no-console': 'off',
     'no-var': 'warn',
     // 'one-var': ['warn', { var: 'always', let: 'never', const: 'never' }],
+    'no-useless-escape': 'off',
     'prefer-const': 'error',
     'no-undef': 'warn',
     'no-unused-vars': 'off',
