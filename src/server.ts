@@ -1,11 +1,15 @@
 import express, { Application, Request, Response } from 'express';
 import dotenv from 'dotenv';
+import { initTables } from './config/database/init-tables';
 dotenv.config();
 
 (async () => {
   const HEALTHZ_ROUTER: string = 'healthz';
 
   const app: Application = express();
+
+  /* Init Tables */
+  await initTables();
 
   /* Middleware */
 
